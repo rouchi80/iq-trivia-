@@ -1,7 +1,7 @@
 <%-- 
     Document   : error
     Created on : Apr 6, 2025, 10:40:59 AM
-    Author     : Bilal Ansar
+    Author     : Team10
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
