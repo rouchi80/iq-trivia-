@@ -1,0 +1,21 @@
+create database IQTEST;
+use IQTEST;
+
+-- Create the User table
+CREATE TABLE User (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL
+);
+
+-- Create the TestResult table
+CREATE TABLE TestResult (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    date DATE NOT NULL,
+    totalQuestions INT NOT NULL,
+    validQuestions INT NOT NULL,
+    iq INT NOT NULL,
+    userId INT,
+    FOREIGN KEY (userId) REFERENCES User(id)
+);
